@@ -143,10 +143,16 @@ image-container {}
     color: #1C5D99;
 }
 
-.content img {
+.wine {
     width: 160px;
+}
 
+.city {
+    width: 180px;
+}
 
+.cathedral {
+    width: 180px;
 }
 
 /* bottom of page */
