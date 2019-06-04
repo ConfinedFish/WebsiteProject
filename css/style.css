@@ -8,6 +8,10 @@ html {
     color: #222222;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Libre Baskerville', serif;
     background-color: white;
@@ -19,6 +23,7 @@ body {
         1px 1px 0 #222222;
     margin: 0;
     font-size: 10px;
+
 }
 
 /* top of page */
@@ -85,37 +90,67 @@ header {
 }
 
 /* body of page */
-.list-container {
+.images {}
+
+.images img {
+    width: 100%;
+    object-fit: fill;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    justify-content: center;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    flex: 33%;
+    max-width: 33%;
+    padding: 0 4px;
+    height: 27em;
+
+}
+
+.column img {
+    margin-top: .5em;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+
+
+.images {
+    max-width: 1350px;
     margin: auto;
-    display: table;
 }
 
-.image-list {
-    list-style-type: none;
-    overflow: hidden;
-    padding: 0;
-    margin: 0;
-
-}
-
-image-container {}
-
-.image-list li {
-    float: left;
-    max-height: 30em;
-    max-width: 40em;
-    padding: 1em;
+.image-container {
+    display: block;
+    position: relative;
     display: inline-block;
 }
 
-.image-list img {
-    width: 40em;
-    height: 30em;
-}
-
 .image-text {
-    position: relative;
-    top: -200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
     max-width: 400px;
     color: white;
@@ -141,67 +176,31 @@ image-container {}
     border-top-color: #BBCDE5;
     text-shadow: none;
     color: #1C5D99;
-    font-size: 12pt;
-    position:
+    max-width: 1350px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.wine-info {
-    position: relative;
+.content p {
+    font-size: 1rem;
+    width: 700px;
 }
 
-.wine-text {
-    text-align: justify;
-    max-width: 1200px;
-    text-align: left;
+.content h1 {
+    font-size: 1.2rem;
+    flex-shrink: 0;
+    flex-grow: 0.5;
+    max-width: 25em;
 }
 
-.wine {
-    width: 160px;
-    float: right;
-    position: absolute;
-    right: 60px;
-    top: 10px;
-}
-
-.city-info {
-    position: relative;
-
-}
-
-.city-info h1 {
-    text-align: right;
-}
-
-.city-text {
-    position: absolute;
-    right: 0px;
-    max-width: 1200px;
-}
-
-.city {
-    width: 190px;
-    top: 0px;
-    padding-left: 60px;
-}
-
-.cathedral-info {
-    position: relative;
-}
-
-.cathedral-text {
-    text-align: justify;
-    max-width: 1200px;
-    text-align: left;
-
-}
-
-.cathedral {
-    position: absolute;
-    width: 180px;
-    float: right;
-    top: 0px;
-    right: 40px;
-
+.content img {
+    width: 40em;
+    height: 30em;
+    margin: 10px 5px 10px 0px;
+    margin-left: auto;
 }
 
 /* bottom of page */
@@ -231,7 +230,6 @@ footer:selection {
 
 .mission p {
     font-size: 9pt;
-    max-width: 250;
     text-align: justify;
 
 }
