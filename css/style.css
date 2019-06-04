@@ -2,10 +2,7 @@
 html {
     max-width: 1500px;
     margin: auto;
-}
-
-::selection {
-    color: #222222;
+    background: #222
 }
 
 * {
@@ -14,7 +11,6 @@ html {
 
 body {
     font-family: 'Libre Baskerville', serif;
-    background-color: white;
     color: white;
     text-shadow:
         -1px -1px 0 #222222,
@@ -175,25 +171,19 @@ header {
     border-top-style: solid;
     border-top-color: #BBCDE5;
     text-shadow: none;
-    color: #1C5D99;
+    color: white;
     max-width: 1350px;
     margin: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 .content p {
     font-size: 1rem;
-    width: 700px;
+    padding: 1em;
 }
 
 .content h1 {
     font-size: 1.2rem;
-    flex-shrink: 0;
-    flex-grow: 0.5;
-    max-width: 25em;
+    max-width: 50em;
 }
 
 .content img {
@@ -210,14 +200,10 @@ footer {
     border-top: 1px;
     border-top-style: solid;
     border-top-color: #BBCDE5;
-    color: #1C5D99;
     margin-right: 7.5em;
     margin-left: 7.5em;
 }
 
-footer:selection {
-    color: #BBCDE5
-}
 
 .mission {
     float: right;
