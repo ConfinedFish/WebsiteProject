@@ -30,6 +30,7 @@ header {
     background-repeat: no-repeat;
     height: 430px;
     color: white;
+    background-attachment: fixed;
 
 }
 
@@ -174,16 +175,37 @@ header {
     color: white;
     max-width: 1350px;
     margin: auto;
+    padding-bottom: 200px;
 }
 
 .content p {
     font-size: 1rem;
     padding: 1em;
+    width: 60vw;
+    display: inline-block;
+}
+
+.wine-text {
+    margin-bottom: 4em;
+
+}
+
+.science-text {
+    margin-bottom: 9em
+}
+
+.hiking-text {
+    margin-bottom: 4em;
+}
+
+.beach-text {
+    margin-bottom: 7.56em;
 }
 
 .content h1 {
     font-size: 1.2rem;
     max-width: 50em;
+    padding-left: 20px;
 }
 
 .content img {
@@ -191,7 +213,14 @@ header {
     height: 30em;
     margin: 10px 5px 10px 0px;
     margin-left: auto;
+    position: relative;
+    float: right;
+    top: 0px;
+    right: 0px;
+    display: inline-block;
 }
+
+.science-img {}
 
 /* bottom of page */
 
