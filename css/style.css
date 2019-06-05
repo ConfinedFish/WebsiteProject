@@ -240,13 +240,13 @@ footer {
 
 .mission p:first-of-type {
     text-align: center;
-    font-size: 14pt;
+    font-size: 12pt;
 }
 
 .mission p {
     font-size: 9pt;
     text-align: justify;
-
+    max-width: 70em
 }
 
 .contact p:first-of-type {
