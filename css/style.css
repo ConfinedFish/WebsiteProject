@@ -1,8 +1,7 @@
 /*default styling for webpage */
 html {
-    max-width: 1500px;
     margin: auto;
-    background: #222
+    background: #DFC890;
 }
 
 * {
@@ -11,7 +10,7 @@ html {
 
 body {
     font-family: 'Libre Baskerville', serif;
-    color: white;
+    color: #222;
     text-shadow:
         -1px -1px 0 #222222,
         1px -1px 0 #222222,
@@ -26,19 +25,23 @@ body {
 header {
     padding-top: 0.1em;
     background-image: url("../images/header.jpg");
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     height: 430px;
     color: white;
     background-attachment: fixed;
-
 }
 
 .logo {
     font-size: 4.8rem;
-    ;
     padding-top: 20px;
     font-family: 'Dancing Script', cursive;
+
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
 }
 
 .quote-text {
@@ -106,12 +109,10 @@ header {
     flex: 33%;
     max-width: 33%;
     padding: 0 4px;
-    height: 27em;
-
+    margin: 1em 0 .5em 0;
 }
 
 .column img {
-    margin-top: .5em;
     vertical-align: middle;
 }
 
@@ -141,6 +142,7 @@ header {
     display: block;
     position: relative;
     display: inline-block;
+    border-radius: 25px;
 }
 
 .image-text {
@@ -162,45 +164,45 @@ header {
     opacity: 1;
 }
 
+.image-container img {
+    border-radius: 25px;
+    border-style: solid;
+    border-color: #222;
+    border-width: 0.2em;
+}
+
 .image-container a {
     text-decoration: none;
 }
 
+.center p,
+.center h1 {
+    margin: auto;
+    text-align: center;
+}
 
 .content {
-    border-top: 1px;
+    background-color: #A0C3F3;
+    border-color: #222;
     border-top-style: solid;
-    border-top-color: #BBCDE5;
+    border-bottom-style: solid;
+    border-right: solid 0.1em;
+    border-left: solid 0.1em;
+    border-radius: 25px;
     text-shadow: none;
-    color: white;
     max-width: 1350px;
     margin: auto;
-    padding-bottom: 200px;
+    padding-bottom: 10em;
+    margin-bottom: 1em;
+    margin-top: 0.5em;
 }
 
 .content p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding: 1em;
     width: 60vw;
-    display: inline-block;
 }
 
-.wine-text {
-    margin-bottom: 4em;
-
-}
-
-.science-text {
-    margin-bottom: 9em
-}
-
-.hiking-text {
-    margin-bottom: 4em;
-}
-
-.beach-text {
-    margin-bottom: 7.56em;
-}
 
 .content h1 {
     font-size: 1.2rem;
@@ -211,26 +213,24 @@ header {
 .content img {
     width: 40em;
     height: 30em;
-    margin: 10px 5px 10px 0px;
-    margin-left: auto;
-    position: relative;
-    float: right;
+    margin: 10px 5px 10px 5px;
     top: 0px;
     right: 0px;
-    display: inline-block;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: #222;
 }
-
-.science-img {}
 
 /* bottom of page */
 
 footer {
+    max-width: 1350px;
     text-shadow: none;
     border-top: 1px;
     border-top-style: solid;
-    border-top-color: #BBCDE5;
-    margin-right: 7.5em;
-    margin-left: 7.5em;
+    border-top-color: #222;
+    border-radius: 25px;
+    margin: auto;
 }
 
 
@@ -247,6 +247,10 @@ footer {
     font-size: 9pt;
     text-align: justify;
     max-width: 70em
+}
+
+.contact {
+    padding-left: 15px;
 }
 
 .contact p:first-of-type {
