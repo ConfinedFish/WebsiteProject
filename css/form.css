@@ -19,6 +19,7 @@
     max-width: 1350px;
     margin: auto;
     margin-top: 0.5em;
+    margin-bottom: 0.5em;
     padding-bottom: .5em
 }
 
@@ -128,7 +129,6 @@ input.button_text {
 
 }
 
-/**** Inputs and Labels ****/
 label.description {
     border: none;
     color: #222;

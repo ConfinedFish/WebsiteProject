@@ -30,6 +30,7 @@ header {
     height: 430px;
     color: white;
     background-attachment: fixed;
+    border-bottom: solid #222 0.2em;
 }
 
 .logo {
@@ -179,9 +180,21 @@ header {
 .center h1 {
     margin: auto;
     text-align: center;
+    padding-bottom: .5em;
+}
+
+.toplink a {
+    text-decoration: underline;
+    color: #222;
+    font-size: .8rem;
+}
+
+.toplink {
+    padding-top: 1em;
 }
 
 .content {
+    display: inline-block;
     background-color: #A0C3F3;
     border-color: #222;
     border-top-style: solid;
@@ -191,18 +204,18 @@ header {
     border-radius: 25px;
     text-shadow: none;
     max-width: 1350px;
-    margin: auto;
-    padding-bottom: 10em;
     margin-bottom: 1em;
     margin-top: 0.5em;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .content p {
     font-size: 1.2rem;
-    padding: 1em;
     width: 60vw;
+    margin: 0 1em;
 }
-
 
 .content h1 {
     font-size: 1.2rem;
